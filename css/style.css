@@ -1,0 +1,116 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #5f7cff, #7b4bff);
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #5f7cff;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-danger {
+  background: #ff6b6b;
+  color: white;
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.links-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.link-chip {
+  background: #5f7cff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-chip button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card center">
+    <h1 id="time">00:00:00</h1>
+    <p id="date">Date</p>
+    <h2 id="greeting">Hello</h2>
+  </div>
+
+  <div class="grid">
+
+    <div class="card center">
+      <h3>Focus Timer</h3>
+      <h1 id="timer">25:00</h1>
+
+      <div class="btn-group">
+        <button class="btn-primary" onclick="startTimer()">Start</button>
+        <button class="btn-secondary" onclick="stopTimer()">Stop</button>
+        <button class="btn-secondary" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Tasks</h3>
+
+      <div class="input-group">
+        <input id="taskInput" placeholder="Add a new task...">
+        <button class="btn-primary" onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h3>Quick Links</h3>
+
+    <div class="input-group">
+      <input id="linkName" placeholder="Link name">
+      <input id="linkURL" placeholder="URL">
+      <button class="btn-primary" onclick="addLink()">Add Link</button>
+    </div>
+
+    <div id="links" class="links-container"></div>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
